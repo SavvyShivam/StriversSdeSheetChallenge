@@ -1,0 +1,12 @@
+#include <bits/stdc++.h> 
+int kthLargest(vector<int>& arr, int size, int K)
+{
+	// Write your code here.
+	int ans;    
+	priority_queue<int>pq(arr.begin(),arr.end());    
+	while(K--)    
+	{ ans=pq.top();        
+		pq.pop();      
+	}    
+	return ans; 
+}
